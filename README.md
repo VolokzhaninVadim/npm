@@ -1,4 +1,4 @@
-# Nginx Proxy Manager 
+# Nginx Proxy Manager
 ![npm.svg](./img/npm.svg)
 
 ## First launch
@@ -6,12 +6,14 @@
 Email: admin@example.com
 Password: changeme
 ```
-Create network: 
+Create network:
 ```bash
 docker network create -d bridge your_network
 ```
 
-Add service (docker container) in network: 
+Add service (docker container) in network:
 ```
 docker network connect your_network your_service
 ```
+## Backup
+For backup use [backup-server](https://github.com/VolokzhaninVadim/duplicati).
