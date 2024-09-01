@@ -15,5 +15,3 @@ Add service (docker container) in network:
 ```
 docker network connect your_network your_service
 ```
-## Backup
-For backup use [backup-server](https://github.com/VolokzhaninVadim/duplicati).
