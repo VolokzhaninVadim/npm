@@ -41,6 +41,17 @@ services:
     networks:
       - default
 
+  tor-bridges-proxy:
+    image: zerolabnet/tor-bridges-proxy:latest
+    container_name: tor-bridges-proxy
+    ports:
+      - "9050:9150"
+    #   - "9151:9151"
+    #   - "53:9053"
+    restart: unless-stopped
+    networks:
+      - default
+
 networks:
   default:
     external: true
